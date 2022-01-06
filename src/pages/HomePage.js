@@ -8,7 +8,7 @@ const HomePage = (props) => {
             <section>
                 <div class="container">
                     <h1>Tropi Book Tracker</h1>
-                    <p>Tropi is your virtual bookshelf. Add your books and track your progress across your shelf.</p>
+                    <p>Tropi is your virtual bookshelf. Track the progress of all your books easily.</p>
                 </div>
                 <Link to="/dashboard">Enter</Link>
             </section>
