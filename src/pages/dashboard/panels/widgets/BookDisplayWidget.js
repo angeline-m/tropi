@@ -1,33 +1,22 @@
-import React from "react";
+import React from "react"
+import Book from "../../../../component/Book"
 
-const Book = ({title, author, lastPage, totalPages, status}) => {
-    return (
-        <>
-        <p>{title}</p>
-        <p>{author}</p>
-        <p>{lastPage}/{totalPages}</p>
-        <p>{status}</p>
-        </>
-    );
-};
 
 const BookDisplayWidget = (props) => {
-    console.log(props)
-
     if(!props.book){
-        return null;
+        return null
     }
     else {
         return (
-            <div class="bookDisplay">
+            <div className="book-display">
                 {
                     props.book.map((book)=>(
                         <Book key={book.id} title={book.title} author={book.author} lastPage={book.lastPage} totalPages={book.totalPages} status={book.status}/>
                     ))
                 }
             </div>
-        );
+        )
     }
 }
 
-export default BookDisplayWidget;
+export default BookDisplayWidget
